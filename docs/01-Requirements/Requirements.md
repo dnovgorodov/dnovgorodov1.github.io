@@ -10,7 +10,7 @@ My module will include a two-way wireless communication using ESP-32s.
 | Surface mounted, 3.3V switching power regulator | 3.2 Volts | 3.3 Volts | No |
 | Surface mounted microcontroller | 1 PIC or ESP | 8-bit PIC | No |
 | Wireless Communication | Able to send or receive a Wi-Fi data | Send and receive Wi-Fi Data to MQTT | Yes |
-| Controller of some sorts | This will give the ESP-32 the signal it needs to send | Send signals to ESP-32 | Yes |
+| Controller of some sorts | Able to send signals | Send signals to ESP-32 | Yes |
 
 - The ESP-32 will be powered by using an outside power source which will be regulated down to 3.3V using the voltage regulator.
 - I will likely use some sort of controller that will send the signals to the ESP-32, which will control the movement of the rover.
