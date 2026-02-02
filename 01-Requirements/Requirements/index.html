@@ -825,7 +825,7 @@
   <h1>Module's Requirements</h1>
 
 <h2 id="module-requirements">Module Requirements</h2>
-<p>The following sections document the requirements that the this module need to fulfills to .....</p>
+<p>My module will include a two-way wireless communication using ESP-32s.</p>
 <table>
 <thead>
 <tr>
@@ -837,7 +837,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Surface mounted, 3.3V switching power regulatore</td>
+<td>Surface mounted, 3.3V switching power regulator</td>
 <td>3.2 Volts</td>
 <td>3.3 Volts</td>
 <td style="text-align: center;">No</td>
@@ -855,13 +855,18 @@
 <td style="text-align: center;">Yes</td>
 </tr>
 <tr>
-<td><em>Rest are items your modules needs to support the task you are covering for the team's device.</em></td>
-<td>---</td>
-<td>---</td>
-<td style="text-align: center;"><strong>NO</strong></td>
+<td>Controller of some sorts</td>
+<td>This will give the ESP-32 the signal it needs to send</td>
+<td>Send signals to ESP-32</td>
+<td style="text-align: center;">Yes</td>
 </tr>
 </tbody>
 </table>
+<ul>
+<li>The ESP-32 will be powered by using an outside power source which will be regulated down to 3.3V using the voltage regulator.</li>
+<li>I will likely use some sort of controller that will send the signals to the ESP-32, which will control the movement of the rover.</li>
+<li>I do not believe I will need either a motor or a serial sensor.</li>
+</ul>
 
 
 
