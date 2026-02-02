@@ -8,7 +8,7 @@ My module will include a two-way wireless communication using ESP-32s.
 | **Requirement Description** | **Measure of<br> Threshold** | **Target<br>Measure** |**Stretch<br>Requirement<br>(Y-N)**|
 |-----------------------------| ----------------- | ----------------- | :-----: |
 | Surface mounted, 3.3V switching power regulator | 3.2 Volts | 3.3 Volts | No |
-| Surface mounted microcontroller | 1 PIC or ESP | 8-bit PIC | No |
+| Surface mounted microcontroller | 1 PIC or ESP | ESP-32 | No |
 | Wireless Communication | Able to send or receive a Wi-Fi data | Send and receive Wi-Fi Data to MQTT | Yes |
 | Controller of some sorts | Able to send signals | Send signals to ESP-32 | Yes |
 
