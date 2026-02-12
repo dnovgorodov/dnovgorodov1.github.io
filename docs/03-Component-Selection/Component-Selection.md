@@ -6,7 +6,7 @@
 
 ## Design Requirements Considered
 
-- Surface‑mount required (EGR 314 constraint)
+- Surface‑mount required (Class requirement)
 - Must support expected input voltage (5–12 V)
 - Must support sufficient current (≥1 A)
 - Mechanically robust and documented
@@ -26,7 +26,7 @@
 ---
 
 ## Selected Component  
-**PJ‑068B‑SMT‑TR DC Power Jack**
+**PJ‑068B‑SMT‑TR**
 
 ### Rationale
 
@@ -58,42 +58,11 @@ The PJ‑002BH‑SMT‑TR is a surface‑mount barrel jack, which makes it easy 
 ---
 
 ## Selected Component  
-**Texas Instruments TPS62111RSAR 3.3 V Buck Regulator IC**
+**TLV75733PDBVR**
 
 ### Rationale
 
-The TPS62111RSAR is a dedicated surface‑mount buck regulator with adequate current capacity and excellent efficiency. Its SMD package and integrated design simplify PCB routing and thermal performance, making it a strong choice for delivering stable 3.3 V to the ESP32 on a custom board.
-
----
-
-# **External Interface Subsystem – 4×2 Connector**
-
-## Design Requirements Considered
-
-- Surface mount preferred (EGR 314)
-- Typical 0.1 in (2.54 mm) pitch for standard programming cables
-- Reliable mechanical retention
-
----
-
-## Potential Solutions
-
-### Table 3 – 4×2 Connector Options
-
-| Option | Image | Purchase Link | Mount | Approx. Cost | Pros | Cons |
-|--------|-------|---------------|-------|--------------|------|------|
-| 1 | ![DF13C-8P](https://media.digikey.com/Photos/HiroseElectricCoLtd/DF13C‑8P‑1.25V(51).jpg) | **:contentReference[oaicite:4]{index=4}** | Surface mount | ~$1.36 | Industry quality; board‑to‑cable connection | 1.25 mm pitch (not 2.54 mm) — verify matching cable |
-| 2 | ![CNC Tech 8pos](https://via.placeholder.com/60?text=8pos+Header) | **:contentReference[oaicite:5]{index=5}** | Surface mount | ~$0.81 | Standard 2.54 mm pitch; easy to find mating cable | Unshrouded; no polarity/keying |
-| 3 | ![TE Connectivity 8pos](https://via.placeholder.com/60?text=8pos+Header) | **:contentReference[oaicite:6]{index=6}** | Surface mount | ~$0.97 | Standard pitch; compact board footprint | Unshrouded; check cable alignment |
-
----
-
-## Selected Component  
-**Hirose Electric DF13C‑8P‑1.25V(51) SMD Header (or equivalent shrouded 8‑pos if required)**
-
-### Rationale
-
-The 8‑position surface‑mount header provides a standard interface for programming and external connections. While the Hirose part is high quality, choose a header with shrouding and matching pitch to your cable — e.g., 2.54 mm if that’s your target pitch. Digi‑Key and Mouser offer multiple SMD headers with various pitch and shroud options. :contentReference[oaicite:7]{index=7}
+I chose the TLV75733PDBVR because it comes in a smaller SOT-23 package and can supply up to 1 A, giving us more current headroom in a compact design. It also includes an enable pin, which gives us better control over power management in the circuit.
 
 ---
 
@@ -117,4 +86,3 @@ The 8‑position surface‑mount header provides a standard interface for progra
 - Digi‑Key lists a broad selection of surface‑mount DC power jacks (vertical and right‑angle) with ratings up to 5 A. :contentReference[oaicite:11]{index=11}  
 - For the 4×2 connector, Digi‑Key and similar distributors offer many variants; ensure pitch and shroud match your application. :contentReference[oaicite:12]{index=12}
 - All selected options focus on **surface mount parts** with datasheets available from reliable distributors.
-
