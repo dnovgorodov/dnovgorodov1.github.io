@@ -966,47 +966,6 @@
 <h3 id="rationale_1">Rationale</h3>
 <p>I chose the TLV75733PDBVR because it comes in a smaller SOT-23 package and can supply up to 1 A, giving us more current headroom in a compact design. It also includes an enable pin, which gives us better control over power management in the circuit.</p>
 <hr>
-<h1 id="microcontroller-subsystem-esp32"><strong>Microcontroller Subsystem – ESP32</strong></h1>
-<hr>
-<h1 id="final-component-selection-summary">Final Component Selection Summary</h1>
-<table>
-<thead>
-<tr>
-<th>Subsystem</th>
-<th>Selected Component</th>
-<th>Justification</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Power Input</strong></td>
-<td><strong>:contentReference[oaicite:8]{index=8}</strong></td>
-<td>Surface‑mount compliant; documented DC jack selection; supports ~1–2 A</td>
-</tr>
-<tr>
-<td><strong>Voltage Regulation</strong></td>
-<td><strong>:contentReference[oaicite:9]{index=9}</strong></td>
-<td>Efficient surface‑mount regulator with adequate current for ESP32</td>
-</tr>
-<tr>
-<td><strong>External Interface</strong></td>
-<td><strong>:contentReference[oaicite:10]{index=10}</strong></td>
-<td>Reliable header; choose correct pitch/shroud per cable</td>
-</tr>
-<tr>
-<td><strong>Microcontroller</strong></td>
-<td>ESP32</td>
-<td>Integrated Wi‑Fi and Bluetooth; no external BT module required</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3 id="notes">Notes</h3>
-<ul>
-<li>Digi‑Key lists a broad selection of surface‑mount DC power jacks (vertical and right‑angle) with ratings up to 5 A. :contentReference[oaicite:11]{index=11}  </li>
-<li>For the 4×2 connector, Digi‑Key and similar distributors offer many variants; ensure pitch and shroud match your application. :contentReference[oaicite:12]{index=12}</li>
-<li>All selected options focus on <strong>surface mount parts</strong> with datasheets available from reliable distributors.</li>
-</ul>
 
 
 
