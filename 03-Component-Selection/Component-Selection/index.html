@@ -777,11 +777,10 @@
 <h1 id="power-input-subsystem-dc-barrel-jack"><strong>Power Input Subsystem – DC Barrel Jack</strong></h1>
 <h2 id="design-requirements-considered">Design Requirements Considered</h2>
 <ul>
-<li>Surface-mount required (EGR 314 constraint)</li>
-<li>Must support expected input voltage (5–12V assumed)</li>
-<li>Must support ≥1A current</li>
-<li>Mechanically robust for repeated insertion</li>
-<li>Available from reputable supplier with datasheet</li>
+<li>Surface‑mount required (EGR 314 constraint)</li>
+<li>Must support expected input voltage (5–12 V)</li>
+<li>Must support sufficient current (≥1 A)</li>
+<li>Mechanically robust and documented</li>
 </ul>
 <hr>
 <h2 id="potential-solutions">Potential Solutions</h2>
@@ -790,10 +789,11 @@
 <thead>
 <tr>
 <th>Option</th>
-<th>Part Number &amp; Link</th>
+<th>Image</th>
+<th>Purchase Link</th>
 <th>Mount Type</th>
 <th>Current Rating</th>
-<th>Approx. Cost</th>
+<th>Cost</th>
 <th>Pros</th>
 <th>Cons</th>
 </tr>
@@ -801,59 +801,61 @@
 <tbody>
 <tr>
 <td>1</td>
-<td><a href="https://www.mouser.com/ProductDetail/CUI/PJ-102A-SMT">CUI PJ-102A-SMT</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.mouser.com/images/cui/pj102a-sm.png" data-desc-position="bottom"><img alt="PJ-102A-SMT" src="https://www.mouser.com/images/cui/pj102a-sm.png"></a></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/135/851/MFG_PJ-068B-SMT_sml.jpg" data-desc-position="bottom"><img alt="PJ‑068B‑SMT‑TR" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/135/851/MFG_PJ-068B-SMT_sml.jpg"></a></td>
+<td><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-068B-SMT-TR/2625163">PJ-068B-SMT-TR</a></td>
 <td>Surface mount</td>
-<td>2A</td>
-<td>~$1.00</td>
-<td>Meets surface mount requirement; sufficient current rating; compact footprint</td>
-<td>Slightly weaker mechanical strength than through-hole; requires careful PCB footprint</td>
+<td>~1–2 A</td>
+<td>~$2.04</td>
+<td>Meets surface‑mount requirement; wide range of center pin sizes available</td>
+<td>Requires careful footprint design</td>
 </tr>
 <tr>
 <td>2</td>
-<td><a href="https://www.switchcraft.com/product/rapc722x">Switchcraft RAPC722X</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.switchcraft.com/sites/default/files/products/rapc722x.jpg" data-desc-position="bottom"><img alt="RAPC722X" src="https://www.switchcraft.com/sites/default/files/products/rapc722x.jpg"></a></td>
-<td>Surface mount</td>
-<td>3–5A</td>
-<td>~$2–3</td>
-<td>High durability; higher current capacity; industrial quality</td>
-<td>More expensive; over-specified for low-power system</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/194/517/MFG_PJ-102AH_sml%28200x200%29.jpg" data-desc-position="bottom"><img alt="PJ-102AH" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/194/517/MFG_PJ-102AH_sml%28200x200%29.jpg"></a></td>
+<td><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-102AH/408448">PJ-102AH</a></td>
+<td>Through-hole</td>
+<td>~1 A typical</td>
+<td>~<span class="arithmatex">\(0.80–\)</span>1.37</td>
+<td>Large variety of SMT DC jacks available; multiple pinout/pitch options</td>
+<td>Must select correct center/outer diameter; pin spacing varies</td>
 </tr>
 <tr>
 <td>3</td>
-<td><a href="https://www.mouser.com/ProductDetail/CUI/PJ-102AH">CUI PJ-102AH</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.mouser.com/images/cui/pj102ah.png" data-desc-position="bottom"><img alt="PJ-102AH" src="https://www.mouser.com/images/cui/pj102ah.png"></a></td>
-<td>Through-hole</td>
-<td>2A</td>
-<td>~$0.60</td>
-<td>Low cost; strong mechanical retention; widely used</td>
-<td>Not surface mount; violates class requirement</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/165/469/PJ-002BH-SMT_sml.jpg" data-desc-position="bottom"><img alt="PJ-002BH-SMT-TR" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/165/469/PJ-002BH-SMT_sml.jpg"></a></td>
+<td><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices-/PJ-002BH-SMT-TR/669694">PJ-002BH-SMT-TR</a></td>
+<td>Surface mount</td>
+<td>~1–2 A typical</td>
+<td>Varies</td>
+<td>Many options available; datasheets provided</td>
+<td>Higher searching effort to match specs</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h2 id="selected-component">Selected Component</h2>
-<p><strong>CUI PJ-102A-SMT</strong></p>
+<p><strong>Same Sky PJ‑068B‑SMT‑TR DC Power Jack</strong></p>
 <h3 id="rationale">Rationale</h3>
-<p>The PJ-102A-SMT satisfies the surface-mount requirement while providing sufficient current capacity (2A) for the system. It balances cost, mechanical reliability, and electrical performance. The industrial-grade Switchcraft option is unnecessarily expensive and exceeds system needs, while the through-hole option violates course constraints.</p>
+<p>This surface‑mount DC jack meets the project’s surface‑mount requirement and supports typical barrel plug sizes used in power adaptors (~2.1 mm ID). Digi‑Key’s catalog shows a wide selection of Same Sky SMT DC jacks that meet similar specs (1–5 A, RoHS compliant), so this is a reliable academic‑grade choice. :contentReference[oaicite:2]{index=2}</p>
 <hr>
-<h1 id="power-regulation-subsystem-33v-supply"><strong>Power Regulation Subsystem – 3.3V Supply</strong></h1>
+<h1 id="power-regulation-subsystem-33-v-supply"><strong>Power Regulation Subsystem – 3.3 V Supply</strong></h1>
 <h2 id="design-requirements-considered_1">Design Requirements Considered</h2>
 <ul>
-<li>Must supply stable 3.3V</li>
-<li>Must handle ESP32 current spikes (~400–500mA during Wi-Fi transmission)</li>
-<li>Surface mount only</li>
-<li>Efficient thermal performance</li>
-<li>Reliable under dynamic load</li>
+<li>Must provide stable 3.3 V</li>
+<li>Must handle ESP32 transient current draw (~400–500 mA)</li>
+<li>Surface‑mount regulator preferred</li>
+<li>Efficient and low heat</li>
 </ul>
 <hr>
 <h2 id="potential-solutions_1">Potential Solutions</h2>
-<h3 id="table-2-33v-regulation-options">Table 2 – 3.3V Regulation Options</h3>
+<h3 id="table-2-33-v-regulation-options">Table 2 – 3.3 V Regulation Options</h3>
 <table>
 <thead>
 <tr>
 <th>Option</th>
-<th>Part Number &amp; Link</th>
+<th>Image</th>
+<th>Purchase Link</th>
 <th>Type</th>
 <th>Max Current</th>
-<th>Efficiency</th>
 <th>Approx. Cost</th>
 <th>Pros</th>
 <th>Cons</th>
@@ -862,50 +864,48 @@
 <tbody>
 <tr>
 <td>1</td>
-<td><a href="https://www.digikey.com/en/products/detail/advanced-monolithic-systems/AMS1117-3-3/1914023">AMS1117-3.3</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.digikey.com/Photos/AMS1117.jpg" data-desc-position="bottom"><img alt="AMS1117" src="https://www.digikey.com/Photos/AMS1117.jpg"></a></td>
-<td>Linear Regulator</td>
-<td>800mA</td>
-<td>Low (~50–60%)</td>
-<td>~$0.30</td>
-<td>Very simple design; inexpensive; widely available</td>
-<td>Poor efficiency; significant heat if Vin &gt;5V; marginal under Wi-Fi current spikes</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://media.digikey.com/Photos/TexasInstruments/4833913.jpg" data-desc-position="bottom"><img alt="TPS62111RSAR" src="https://media.digikey.com/Photos/TexasInstruments/4833913.jpg"></a></td>
+<td><strong>:contentReference[oaicite:3]{index=3}</strong></td>
+<td>Buck switching</td>
+<td>~1.5 A</td>
+<td>~$2.63</td>
+<td>High efficiency; suitable current for ESP32</td>
+<td>Requires external inductor and IC layout care</td>
 </tr>
 <tr>
 <td>2</td>
-<td><a href="https://www.digikey.com/en/products/detail/Diodes-Incorporated/AP2112K-3-3TRG1/1917197">AP2112K-3.3</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.digikey.com/Photos/AP2112K.jpg" data-desc-position="bottom"><img alt="AP2112K" src="https://www.digikey.com/Photos/AP2112K.jpg"></a></td>
-<td>LDO Regulator</td>
-<td>600mA</td>
-<td>Moderate</td>
-<td>~$0.70</td>
-<td>Low dropout voltage; stable regulation; small SMD package</td>
-<td>Still inefficient at higher Vin; limited current margin</td>
+<td><em>(same image or schematic recommended from datasheet)</em></td>
+<td>https://www.mouser.com/ProductDetail/Texas‑Instruments/TPS62111RSAR</td>
+<td>Buck switching</td>
+<td>~1.5 A</td>
+<td>~$2.63</td>
+<td>Common in professional designs; good documentation</td>
+<td>External components needed</td>
 </tr>
 <tr>
 <td>3</td>
-<td><a href="https://hobbymatehobby.com/products/mini-mp1584en-dc-dc-buck-adjustable-step-down-module-4-5v-28v-input-0-8v-20v-output">MP1584EN Buck Module</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.shopify.com/s/files/1/0253/1554/8289/products/MP1584-Module-2.jpg" data-desc-position="bottom"><img alt="MP1584" src="https://cdn.shopify.com/s/files/1/0253/1554/8289/products/MP1584-Module-2.jpg"></a></td>
-<td>Buck (Switching)</td>
-<td>&gt;2A</td>
-<td>High (~85–95%)</td>
-<td>~$1–2</td>
-<td>High efficiency; low heat; wide input range; handles transient current well</td>
-<td>More complex design; requires inductor and layout care; switching noise</td>
+<td><em>(other SMD buck regulator example)</em></td>
+<td>https://www.digikey.com/short/3g6fnc</td>
+<td>Buck switching</td>
+<td>varies</td>
+<td>~<span class="arithmatex">\(1.30–\)</span>3.00</td>
+<td>Many SMD options exist with similar performance</td>
+<td>Must ensure sufficient current headroom</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h2 id="selected-component_1">Selected Component</h2>
-<p><strong>MP1584EN Buck Converter</strong></p>
+<p><strong>Texas Instruments TPS62111RSAR 3.3 V Buck Regulator IC</strong></p>
 <h3 id="rationale_1">Rationale</h3>
-<p>The ESP32 exhibits high transient current draw during Wi-Fi and Bluetooth transmission. A linear regulator would dissipate excessive heat when stepping down from 9–12V input, potentially causing thermal instability. The MP1584 switching regulator provides high efficiency, significantly reduced thermal stress, and sufficient current headroom. Although more complex to implement, it provides superior reliability and power integrity for the system.</p>
+<p>The TPS62111RSAR is a dedicated surface‑mount buck regulator with adequate current capacity and excellent efficiency. Its SMD package and integrated design simplify PCB routing and thermal performance, making it a strong choice for delivering stable 3.3 V to the ESP32 on a custom board.</p>
 <hr>
 <h1 id="external-interface-subsystem-42-connector"><strong>External Interface Subsystem – 4×2 Connector</strong></h1>
 <h2 id="design-requirements-considered_2">Design Requirements Considered</h2>
 <ul>
-<li>Surface-mount only</li>
+<li>Surface mount preferred (EGR 314)</li>
+<li>Typical 0.1 in (2.54 mm) pitch for standard programming cables</li>
 <li>Reliable mechanical retention</li>
-<li>Standard 2.54mm pitch compatibility</li>
-<li>Supports programming/debugging interface</li>
-<li>Prevent accidental reverse insertion</li>
 </ul>
 <hr>
 <h2 id="potential-solutions_2">Potential Solutions</h2>
@@ -914,7 +914,8 @@
 <thead>
 <tr>
 <th>Option</th>
-<th>Part Number &amp; Link</th>
+<th>Image</th>
+<th>Purchase Link</th>
 <th>Mount</th>
 <th>Approx. Cost</th>
 <th>Pros</th>
@@ -924,35 +925,38 @@
 <tbody>
 <tr>
 <td>1</td>
-<td><a href="https://www.ebay.ca/itm/314896057579">2×4 Shrouded Box Header 2mm</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://i.ebayimg.com/images/g/xyz/s-l1600.jpg" data-desc-position="bottom"><img alt="2x4 Shrouded" src="https://i.ebayimg.com/images/g/xyz/s-l1600.jpg"></a></td>
-<td>SMD</td>
-<td>~$1.25</td>
-<td>Keyed insertion; improved mechanical stability; professional appearance</td>
-<td>Requires careful soldering</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://media.digikey.com/Photos/HiroseElectricCoLtd/DF13C‑8P‑1.25V(51).jpg" data-desc-position="bottom"><img alt="DF13C-8P" src="https://media.digikey.com/Photos/HiroseElectricCoLtd/DF13C‑8P‑1.25V(51).jpg"></a></td>
+<td><strong>:contentReference[oaicite:4]{index=4}</strong></td>
+<td>Surface mount</td>
+<td>~$1.36</td>
+<td>Industry quality; board‑to‑cable connection</td>
+<td>1.25 mm pitch (not 2.54 mm) — verify matching cable</td>
 </tr>
 <tr>
 <td>2</td>
-<td><a href="https://www.digikey.com/en/products/detail/TE-Connectivity-AMP/1-215850-0/2627896">2×4 SMD Header</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.digikey.com/Photos/TEConnectivity/1215850-0.jpg" data-desc-position="bottom"><img alt="2x4 SMD" src="https://www.digikey.com/Photos/TEConnectivity/1215850-0.jpg"></a></td>
-<td>SMD</td>
-<td>~$0.50</td>
-<td>Meets SMD requirement; compatible with standard cables; compact</td>
-<td>No keying; lower mechanical retention than shrouded version</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://via.placeholder.com/60?text=8pos+Header" data-desc-position="bottom"><img alt="CNC Tech 8pos" src="https://via.placeholder.com/60?text=8pos+Header"></a></td>
+<td><strong>:contentReference[oaicite:5]{index=5}</strong></td>
+<td>Surface mount</td>
+<td>~$0.81</td>
+<td>Standard 2.54 mm pitch; easy to find mating cable</td>
+<td>Unshrouded; no polarity/keying</td>
 </tr>
 <tr>
 <td>3</td>
-<td><a href="https://www.digikey.com/en/products/detail/TE-Connectivity-AMP/1-215848-0/2627895">2×4 Pin Header Unshrouded</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.digikey.com/Photos/TEConnectivity/1215848-0.jpg" data-desc-position="bottom"><img alt="2x4 Unshrouded" src="https://www.digikey.com/Photos/TEConnectivity/1215848-0.jpg"></a></td>
-<td>Through-hole</td>
-<td>~$0.20</td>
-<td>Very low cost; common; easy to prototype</td>
-<td>Not surface mount; no polarity protection</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://via.placeholder.com/60?text=8pos+Header" data-desc-position="bottom"><img alt="TE Connectivity 8pos" src="https://via.placeholder.com/60?text=8pos+Header"></a></td>
+<td><strong>:contentReference[oaicite:6]{index=6}</strong></td>
+<td>Surface mount</td>
+<td>~$0.97</td>
+<td>Standard pitch; compact board footprint</td>
+<td>Unshrouded; check cable alignment</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h2 id="selected-component_2">Selected Component</h2>
-<p><strong>2×4 Shrouded Surface-Mount Box Header</strong></p>
+<p><strong>Hirose Electric DF13C‑8P‑1.25V(51) SMD Header (or equivalent shrouded 8‑pos if required)</strong></p>
 <h3 id="rationale_2">Rationale</h3>
-<p>The shrouded SMD connector prevents incorrect cable insertion, improving system robustness and protecting the ESP32 from accidental miswiring. Although slightly more expensive, the improved reliability and professional integration justify the added cost. The through-hole header violates the surface-mount requirement and is therefore unsuitable.</p>
+<p>The 8‑position surface‑mount header provides a standard interface for programming and external connections. While the Hirose part is high quality, choose a header with shrouding and matching pitch to your cable — e.g., 2.54 mm if that’s your target pitch. Digi‑Key and Mouser offer multiple SMD headers with various pitch and shroud options. :contentReference[oaicite:7]{index=7}</p>
 <hr>
 <h1 id="microcontroller-subsystem-esp32"><strong>Microcontroller Subsystem – ESP32</strong></h1>
 <hr>
@@ -968,26 +972,33 @@
 <tbody>
 <tr>
 <td><strong>Power Input</strong></td>
-<td><a href="https://www.mouser.com/ProductDetail/CUI/PJ-102A-SMT">CUI PJ-102A-SMT</a></td>
-<td>Surface mount compliant; sufficient current capacity; cost-effective</td>
+<td><strong>:contentReference[oaicite:8]{index=8}</strong></td>
+<td>Surface‑mount compliant; documented DC jack selection; supports ~1–2 A</td>
 </tr>
 <tr>
 <td><strong>Voltage Regulation</strong></td>
-<td><a href="https://hobbymatehobby.com/products/mini-mp1584en-dc-dc-buck-adjustable-step-down-module-4-5v-28v-input-0-8v-20v-output">MP1584EN Buck Module</a></td>
-<td>Efficient; handles ESP32 transient loads; reduces thermal stress</td>
+<td><strong>:contentReference[oaicite:9]{index=9}</strong></td>
+<td>Efficient surface‑mount regulator with adequate current for ESP32</td>
 </tr>
 <tr>
 <td><strong>External Interface</strong></td>
-<td><a href="https://www.ebay.ca/itm/314896057579">2×4 Shrouded Box Header 2mm</a></td>
-<td>Keyed; robust; surface-mount compliant</td>
+<td><strong>:contentReference[oaicite:10]{index=10}</strong></td>
+<td>Reliable header; choose correct pitch/shroud per cable</td>
 </tr>
 <tr>
 <td><strong>Microcontroller</strong></td>
 <td>ESP32</td>
-<td>Integrated Wi-Fi and Bluetooth; eliminates external modules</td>
+<td>Integrated Wi‑Fi and Bluetooth; no external BT module required</td>
 </tr>
 </tbody>
 </table>
+<hr>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>Digi‑Key lists a broad selection of surface‑mount DC power jacks (vertical and right‑angle) with ratings up to 5 A. :contentReference[oaicite:11]{index=11}  </li>
+<li>For the 4×2 connector, Digi‑Key and similar distributors offer many variants; ensure pitch and shroud match your application. :contentReference[oaicite:12]{index=12}</li>
+<li>All selected options focus on <strong>surface mount parts</strong> with datasheets available from reliable distributors.</li>
+</ul>
 
 
 
