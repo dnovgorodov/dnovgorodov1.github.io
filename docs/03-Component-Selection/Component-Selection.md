@@ -26,11 +26,11 @@
 ---
 
 ## Selected Component  
-**Same Sky PJ‑068B‑SMT‑TR DC Power Jack**
+**PJ‑068B‑SMT‑TR DC Power Jack**
 
 ### Rationale
 
-This surface‑mount DC jack meets the project’s surface‑mount requirement and supports typical barrel plug sizes used in power adaptors (~2.1 mm ID). Digi‑Key’s catalog shows a wide selection of Same Sky SMT DC jacks that meet similar specs (1–5 A, RoHS compliant), so this is a reliable academic‑grade choice. :contentReference[oaicite:2]{index=2}
+The PJ‑002BH‑SMT‑TR is a surface‑mount barrel jack, which makes it easy to place on a PCB and ideal for automated assembly. Its compact, low‑profile design saves board space, and it matches the required power plug size and ratings, providing reliable mechanical and electrical connections.
 
 ---
 
@@ -49,11 +49,11 @@ This surface‑mount DC jack meets the project’s surface‑mount requirement a
 
 ### Table 2 – 3.3 V Regulation Options
 
-| Option | Image | Purchase Link | Type | Max Current | Approx. Cost | Pros | Cons |
+| Option | Image | Purchase Link | Mount Type | Max Current | Approx. Cost | Pros | Cons |
 |--------|-------|---------------|------|--------------|--------------|------|------|
-| 1 | ![TPS62111RSAR](https://media.digikey.com/Photos/TexasInstruments/4833913.jpg) | **:contentReference[oaicite:3]{index=3}** | Buck switching | ~1.5 A | ~$2.63 | High efficiency; suitable current for ESP32 | Requires external inductor and IC layout care |
-| 2 | *(same image or schematic recommended from datasheet)* | https://www.mouser.com/ProductDetail/Texas‑Instruments/TPS62111RSAR | Buck switching | ~1.5 A | ~$2.63 | Common in professional designs; good documentation | External components needed |
-| 3 | *(other SMD buck regulator example)* | https://www.digikey.com/short/3g6fnc | Buck switching | varies | ~$1.30–$3.00 | Many SMD options exist with similar performance | Must ensure sufficient current headroom |
+| 1 | ![LD1117V33](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/415/110/497%7ETO220-3TO220AB%7E%7E3_sml.jpg) | [LD1117V33](https://www.digikey.com/en/products/detail/stmicroelectronics/LD1117V33/586012) | Through-hole | ~1.5 A | ~$2.63 | High efficiency; suitable current for ESP32 | Requires external inductor and IC layout care |
+| 2 | ![TLV75733PDBVR](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/002/172/168/296%7E4214839%7EDBV%7E5__sml%28200x200%29.jpg) | [TLV75733PDBVR](https://www.digikey.com/en/products/detail/texas-instruments/TLV75733PDBVR/9685553) | Surface mount | ~1.5 A | ~$2.63 | Common in professional designs; good documentation | External components needed |
+| 3 | ![TC1264-3.3VDB](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/020/996/308/150%7EC04-032%7EDB%7E4_sml.jpg) | [TC1264-3.3VDB](https://www.digikey.com/en/products/detail/microchip-technology/TC1264-3.3VDB/964315) | Surface mount | Varies | ~$1.30–$3.00 | Many SMD options exist with similar performance | Must ensure sufficient current headroom |
 
 ---
 
