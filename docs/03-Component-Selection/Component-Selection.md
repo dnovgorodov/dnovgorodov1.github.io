@@ -65,24 +65,3 @@ The PJ‑002BH‑SMT‑TR is a surface‑mount barrel jack, which makes it easy 
 I chose the TLV75733PDBVR because it comes in a smaller SOT-23 package and can supply up to 1 A, giving us more current headroom in a compact design. It also includes an enable pin, which gives us better control over power management in the circuit.
 
 ---
-
-# **Microcontroller Subsystem – ESP32**
-
----
-
-# Final Component Selection Summary
-
-| Subsystem | Selected Component | Justification |
-|------------|------------------|--------------|
-| **Power Input** | **:contentReference[oaicite:8]{index=8}** | Surface‑mount compliant; documented DC jack selection; supports ~1–2 A |
-| **Voltage Regulation** | **:contentReference[oaicite:9]{index=9}** | Efficient surface‑mount regulator with adequate current for ESP32 |
-| **External Interface** | **:contentReference[oaicite:10]{index=10}** | Reliable header; choose correct pitch/shroud per cable |
-| **Microcontroller** | ESP32 | Integrated Wi‑Fi and Bluetooth; no external BT module required |
-
----
-
-### Notes
-
-- Digi‑Key lists a broad selection of surface‑mount DC power jacks (vertical and right‑angle) with ratings up to 5 A. :contentReference[oaicite:11]{index=11}  
-- For the 4×2 connector, Digi‑Key and similar distributors offer many variants; ensure pitch and shroud match your application. :contentReference[oaicite:12]{index=12}
-- All selected options focus on **surface mount parts** with datasheets available from reliable distributors.
