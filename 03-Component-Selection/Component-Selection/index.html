@@ -790,7 +790,7 @@
 <thead>
 <tr>
 <th>Option</th>
-<th>Part Number</th>
+<th>Part Number &amp; Link</th>
 <th>Mount Type</th>
 <th>Current Rating</th>
 <th>Approx. Cost</th>
@@ -801,16 +801,7 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>CUI PJ-102AH</td>
-<td>Through-hole</td>
-<td>2A</td>
-<td>~$0.60</td>
-<td>Low cost; strong mechanical retention; widely used</td>
-<td>Not surface mount; violates EGR 314 requirement</td>
-</tr>
-<tr>
-<td>2</td>
-<td>CUI PJ-102A-SMT</td>
+<td><a href="https://www.mouser.com/ProductDetail/CUI/PJ-102A-SMT">CUI PJ-102A-SMT</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.mouser.com/images/cui/pj102a-sm.png" data-desc-position="bottom"><img alt="PJ-102A-SMT" src="https://www.mouser.com/images/cui/pj102a-sm.png"></a></td>
 <td>Surface mount</td>
 <td>2A</td>
 <td>~$1.00</td>
@@ -818,13 +809,22 @@
 <td>Slightly weaker mechanical strength than through-hole; requires careful PCB footprint</td>
 </tr>
 <tr>
-<td>3</td>
-<td>Switchcraft RAPC722X</td>
+<td>2</td>
+<td><a href="https://www.switchcraft.com/product/rapc722x">Switchcraft RAPC722X</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.switchcraft.com/sites/default/files/products/rapc722x.jpg" data-desc-position="bottom"><img alt="RAPC722X" src="https://www.switchcraft.com/sites/default/files/products/rapc722x.jpg"></a></td>
 <td>Surface mount</td>
 <td>3–5A</td>
 <td>~$2–3</td>
 <td>High durability; higher current capacity; industrial quality</td>
 <td>More expensive; over-specified for low-power system</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://www.mouser.com/ProductDetail/CUI/PJ-102AH">CUI PJ-102AH</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.mouser.com/images/cui/pj102ah.png" data-desc-position="bottom"><img alt="PJ-102AH" src="https://www.mouser.com/images/cui/pj102ah.png"></a></td>
+<td>Through-hole</td>
+<td>2A</td>
+<td>~$0.60</td>
+<td>Low cost; strong mechanical retention; widely used</td>
+<td>❌ Not surface mount; violates EGR 314 requirement</td>
 </tr>
 </tbody>
 </table>
@@ -850,7 +850,7 @@
 <thead>
 <tr>
 <th>Option</th>
-<th>Part Number</th>
+<th>Part Number &amp; Link</th>
 <th>Type</th>
 <th>Max Current</th>
 <th>Efficiency</th>
@@ -862,7 +862,7 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>AMS1117-3.3</td>
+<td><a href="https://www.digikey.com/en/products/detail/advanced-monolithic-systems/AMS1117-3-3/1914023">AMS1117-3.3</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.digikey.com/Photos/AMS1117.jpg" data-desc-position="bottom"><img alt="AMS1117" src="https://www.digikey.com/Photos/AMS1117.jpg"></a></td>
 <td>Linear Regulator</td>
 <td>800mA</td>
 <td>Low (~50–60%)</td>
@@ -872,7 +872,7 @@
 </tr>
 <tr>
 <td>2</td>
-<td>AP2112K-3.3</td>
+<td><a href="https://www.digikey.com/en/products/detail/Diodes-Incorporated/AP2112K-3-3TRG1/1917197">AP2112K-3.3</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.digikey.com/Photos/AP2112K.jpg" data-desc-position="bottom"><img alt="AP2112K" src="https://www.digikey.com/Photos/AP2112K.jpg"></a></td>
 <td>LDO Regulator</td>
 <td>600mA</td>
 <td>Moderate</td>
@@ -882,8 +882,8 @@
 </tr>
 <tr>
 <td>3</td>
-<td>MP1584</td>
-<td>Buck (Switching) Regulator</td>
+<td><a href="https://hobbymatehobby.com/products/mini-mp1584en-dc-dc-buck-adjustable-step-down-module-4-5v-28v-input-0-8v-20v-output">MP1584EN Buck Module</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.shopify.com/s/files/1/0253/1554/8289/products/MP1584-Module-2.jpg" data-desc-position="bottom"><img alt="MP1584" src="https://cdn.shopify.com/s/files/1/0253/1554/8289/products/MP1584-Module-2.jpg"></a></td>
+<td>Buck (Switching)</td>
 <td>&gt;2A</td>
 <td>High (~85–95%)</td>
 <td>~$1–2</td>
@@ -894,7 +894,7 @@
 </table>
 <hr>
 <h2 id="selected-component_1">Selected Component</h2>
-<p><strong>MP1584 Buck Converter</strong></p>
+<p><strong>MP1584EN Buck Converter</strong></p>
 <h3 id="rationale_1">Rationale</h3>
 <p>The ESP32 exhibits high transient current draw during Wi-Fi and Bluetooth transmission. A linear regulator would dissipate excessive heat when stepping down from 9–12V input, potentially causing thermal instability. The MP1584 switching regulator provides high efficiency, significantly reduced thermal stress, and sufficient current headroom. Although more complex to implement, it provides superior reliability and power integrity for the system.</p>
 <hr>
@@ -914,7 +914,7 @@
 <thead>
 <tr>
 <th>Option</th>
-<th>Type</th>
+<th>Part Number &amp; Link</th>
 <th>Mount</th>
 <th>Approx. Cost</th>
 <th>Pros</th>
@@ -924,27 +924,27 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>2×4 Pin Header (Unshrouded)</td>
-<td>Through-hole</td>
-<td>~$0.20</td>
-<td>Very low cost; common; easy to prototype</td>
-<td>Not surface mount; no polarity protection</td>
+<td><a href="https://www.ebay.ca/itm/314896057579">2×4 Shrouded Box Header 2mm</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://i.ebayimg.com/images/g/xyz/s-l1600.jpg" data-desc-position="bottom"><img alt="2x4 Shrouded" src="https://i.ebayimg.com/images/g/xyz/s-l1600.jpg"></a></td>
+<td>SMD</td>
+<td>~$1.25</td>
+<td>Keyed insertion; improved mechanical stability; professional appearance</td>
+<td>Requires careful soldering</td>
 </tr>
 <tr>
 <td>2</td>
-<td>2×4 SMD Header</td>
-<td>Surface mount</td>
+<td><a href="https://www.digikey.com/en/products/detail/TE-Connectivity-AMP/1-215850-0/2627896">2×4 SMD Header</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.digikey.com/Photos/TEConnectivity/1215850-0.jpg" data-desc-position="bottom"><img alt="2x4 SMD" src="https://www.digikey.com/Photos/TEConnectivity/1215850-0.jpg"></a></td>
+<td>SMD</td>
 <td>~$0.50</td>
 <td>Meets SMD requirement; compatible with standard cables; compact</td>
 <td>No keying; lower mechanical retention than shrouded version</td>
 </tr>
 <tr>
 <td>3</td>
-<td>2×4 Shrouded Box Header (SMD)</td>
-<td>Surface mount</td>
-<td>~$1–2</td>
-<td>Keyed insertion; improved mechanical stability; professional appearance</td>
-<td>Higher cost; larger PCB footprint</td>
+<td><a href="https://www.digikey.com/en/products/detail/TE-Connectivity-AMP/1-215848-0/2627895">2×4 Pin Header Unshrouded</a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.digikey.com/Photos/TEConnectivity/1215848-0.jpg" data-desc-position="bottom"><img alt="2x4 Unshrouded" src="https://www.digikey.com/Photos/TEConnectivity/1215848-0.jpg"></a></td>
+<td>Through-hole</td>
+<td>~$0.20</td>
+<td>Very low cost; common; easy to prototype</td>
+<td>Not surface mount; no polarity protection</td>
 </tr>
 </tbody>
 </table>
@@ -955,7 +955,6 @@
 <p>The shrouded SMD connector prevents incorrect cable insertion, improving system robustness and protecting the ESP32 from accidental miswiring. Although slightly more expensive, the improved reliability and professional integration justify the added cost. The through-hole header violates the surface-mount requirement and is therefore unsuitable.</p>
 <hr>
 <h1 id="microcontroller-subsystem-esp32"><strong>Microcontroller Subsystem – ESP32</strong></h1>
-<p><em>(Completed separately per assignment requirements.)</em></p>
 <hr>
 <h1 id="final-component-selection-summary">Final Component Selection Summary</h1>
 <table>
@@ -969,18 +968,18 @@
 <tbody>
 <tr>
 <td><strong>Power Input</strong></td>
-<td>CUI PJ-102A-SMT</td>
+<td><a href="https://www.mouser.com/ProductDetail/CUI/PJ-102A-SMT">CUI PJ-102A-SMT</a></td>
 <td>Surface mount compliant; sufficient current capacity; cost-effective</td>
 </tr>
 <tr>
 <td><strong>Voltage Regulation</strong></td>
-<td>MP1584 Buck Converter</td>
+<td><a href="https://hobbymatehobby.com/products/mini-mp1584en-dc-dc-buck-adjustable-step-down-module-4-5v-28v-input-0-8v-20v-output">MP1584EN Buck Module</a></td>
 <td>Efficient; handles ESP32 transient loads; reduces thermal stress</td>
 </tr>
 <tr>
 <td><strong>External Interface</strong></td>
-<td>2×4 Shrouded SMD Header</td>
-<td>Keyed; robust; surface mount compliant</td>
+<td><a href="https://www.ebay.ca/itm/314896057579">2×4 Shrouded Box Header 2mm</a></td>
+<td>Keyed; robust; surface-mount compliant</td>
 </tr>
 <tr>
 <td><strong>Microcontroller</strong></td>
