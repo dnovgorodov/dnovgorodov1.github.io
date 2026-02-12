@@ -22,7 +22,7 @@
 |--------|------------------|------------|----------------|--------------|------|------|
 | 1 | [CUI PJ-102A-SMT](https://www.mouser.com/ProductDetail/CUI/PJ-102A-SMT) ![PJ-102A-SMT](https://www.mouser.com/images/cui/pj102a-sm.png) | Surface mount | 2A | ~$1.00 | Meets surface mount requirement; sufficient current rating; compact footprint | Slightly weaker mechanical strength than through-hole; requires careful PCB footprint |
 | 2 | [Switchcraft RAPC722X](https://www.switchcraft.com/product/rapc722x) ![RAPC722X](https://www.switchcraft.com/sites/default/files/products/rapc722x.jpg) | Surface mount | 3–5A | ~$2–3 | High durability; higher current capacity; industrial quality | More expensive; over-specified for low-power system |
-| 3 | [CUI PJ-102AH](https://www.mouser.com/ProductDetail/CUI/PJ-102AH) ![PJ-102AH](https://www.mouser.com/images/cui/pj102ah.png) | Through-hole | 2A | ~$0.60 | Low cost; strong mechanical retention; widely used | ❌ Not surface mount; violates EGR 314 requirement |
+| 3 | [CUI PJ-102AH](https://www.mouser.com/ProductDetail/CUI/PJ-102AH) ![PJ-102AH](https://www.mouser.com/images/cui/pj102ah.png) | Through-hole | 2A | ~$0.60 | Low cost; strong mechanical retention; widely used | Not surface mount; violates class requirement |
 
 ---
 
