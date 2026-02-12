@@ -777,7 +777,7 @@
 <h1 id="power-input-subsystem-dc-barrel-jack"><strong>Power Input Subsystem – DC Barrel Jack</strong></h1>
 <h2 id="design-requirements-considered">Design Requirements Considered</h2>
 <ul>
-<li>Surface‑mount required (EGR 314 constraint)</li>
+<li>Surface‑mount required (Class requirement)</li>
 <li>Must support expected input voltage (5–12 V)</li>
 <li>Must support sufficient current (≥1 A)</li>
 <li>Mechanically robust and documented</li>
@@ -833,7 +833,7 @@
 </table>
 <hr>
 <h2 id="selected-component">Selected Component</h2>
-<p><strong>PJ‑068B‑SMT‑TR DC Power Jack</strong></p>
+<p><strong>PJ‑068B‑SMT‑TR</strong></p>
 <h3 id="rationale">Rationale</h3>
 <p>The PJ‑002BH‑SMT‑TR is a surface‑mount barrel jack, which makes it easy to place on a PCB and ideal for automated assembly. Its compact, low‑profile design saves board space, and it matches the required power plug size and ratings, providing reliable mechanical and electrical connections.</p>
 <hr>
@@ -896,67 +896,9 @@
 </table>
 <hr>
 <h2 id="selected-component_1">Selected Component</h2>
-<p><strong>Texas Instruments TPS62111RSAR 3.3 V Buck Regulator IC</strong></p>
+<p><strong>TLV75733PDBVR</strong></p>
 <h3 id="rationale_1">Rationale</h3>
-<p>The TPS62111RSAR is a dedicated surface‑mount buck regulator with adequate current capacity and excellent efficiency. Its SMD package and integrated design simplify PCB routing and thermal performance, making it a strong choice for delivering stable 3.3 V to the ESP32 on a custom board.</p>
-<hr>
-<h1 id="external-interface-subsystem-42-connector"><strong>External Interface Subsystem – 4×2 Connector</strong></h1>
-<h2 id="design-requirements-considered_2">Design Requirements Considered</h2>
-<ul>
-<li>Surface mount preferred (EGR 314)</li>
-<li>Typical 0.1 in (2.54 mm) pitch for standard programming cables</li>
-<li>Reliable mechanical retention</li>
-</ul>
-<hr>
-<h2 id="potential-solutions_2">Potential Solutions</h2>
-<h3 id="table-3-42-connector-options">Table 3 – 4×2 Connector Options</h3>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Image</th>
-<th>Purchase Link</th>
-<th>Mount</th>
-<th>Approx. Cost</th>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://media.digikey.com/Photos/HiroseElectricCoLtd/DF13C‑8P‑1.25V(51).jpg" data-desc-position="bottom"><img alt="DF13C-8P" src="https://media.digikey.com/Photos/HiroseElectricCoLtd/DF13C‑8P‑1.25V(51).jpg"></a></td>
-<td><strong>:contentReference[oaicite:4]{index=4}</strong></td>
-<td>Surface mount</td>
-<td>~$1.36</td>
-<td>Industry quality; board‑to‑cable connection</td>
-<td>1.25 mm pitch (not 2.54 mm) — verify matching cable</td>
-</tr>
-<tr>
-<td>2</td>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://via.placeholder.com/60?text=8pos+Header" data-desc-position="bottom"><img alt="CNC Tech 8pos" src="https://via.placeholder.com/60?text=8pos+Header"></a></td>
-<td><strong>:contentReference[oaicite:5]{index=5}</strong></td>
-<td>Surface mount</td>
-<td>~$0.81</td>
-<td>Standard 2.54 mm pitch; easy to find mating cable</td>
-<td>Unshrouded; no polarity/keying</td>
-</tr>
-<tr>
-<td>3</td>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://via.placeholder.com/60?text=8pos+Header" data-desc-position="bottom"><img alt="TE Connectivity 8pos" src="https://via.placeholder.com/60?text=8pos+Header"></a></td>
-<td><strong>:contentReference[oaicite:6]{index=6}</strong></td>
-<td>Surface mount</td>
-<td>~$0.97</td>
-<td>Standard pitch; compact board footprint</td>
-<td>Unshrouded; check cable alignment</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="selected-component_2">Selected Component</h2>
-<p><strong>Hirose Electric DF13C‑8P‑1.25V(51) SMD Header (or equivalent shrouded 8‑pos if required)</strong></p>
-<h3 id="rationale_2">Rationale</h3>
-<p>The 8‑position surface‑mount header provides a standard interface for programming and external connections. While the Hirose part is high quality, choose a header with shrouding and matching pitch to your cable — e.g., 2.54 mm if that’s your target pitch. Digi‑Key and Mouser offer multiple SMD headers with various pitch and shroud options. :contentReference[oaicite:7]{index=7}</p>
+<p>I chose the TLV75733PDBVR because it comes in a smaller SOT-23 package and can supply up to 1 A, giving us more current headroom in a compact design. It also includes an enable pin, which gives us better control over power management in the circuit.</p>
 <hr>
 <h1 id="microcontroller-subsystem-esp32"><strong>Microcontroller Subsystem – ESP32</strong></h1>
 <hr>
