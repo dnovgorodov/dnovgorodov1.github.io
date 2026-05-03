@@ -52,16 +52,16 @@ The PJ‑002BH‑SMT‑TR is a surface‑mount barrel jack, which makes it easy 
 | Option | Image | Purchase Link | Mount Type | Max Current | Approx. Cost | Pros | Cons |
 |--------|-------|---------------|------|--------------|--------------|------|------|
 | 1 | ![LD1117V33](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/415/110/497%7ETO220-3TO220AB%7E%7E3_sml.jpg) | [LD1117V33](https://www.digikey.com/en/products/detail/stmicroelectronics/LD1117V33/586012) | Through-hole | ~1.5 A | ~$2.63 | High efficiency; suitable current for ESP32 | Requires external inductor and IC layout care |
-| 2 | ![TLV75733PDBVR](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/002/172/168/296%7E4214839%7EDBV%7E5__sml%28200x200%29.jpg) | [TLV75733PDBVR](https://www.digikey.com/en/products/detail/texas-instruments/TLV75733PDBVR/9685553) | Surface mount | ~1.5 A | ~$2.63 | Common in professional designs; good documentation | External components needed |
+| 2 | ![LM2575D2T-3.3R4G](https://www.mouser.com/images/mouserelectronics/sm/D2PAK_5_DSL.jpg) | [LM2575D2T-3.3R4G](https://www.mouser.com/ProductDetail/onsemi/LM2575D2T-3.3R4G?qs=2OtswVQKCOFhf1pTPfoNzA%3D%3D) | Surface mount | ~1 A | ~$2.13 | Common in professional designs; good documentation | External components needed |
 | 3 | ![TC1264-3.3VDB](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/020/996/308/150%7EC04-032%7EDB%7E4_sml.jpg) | [TC1264-3.3VDB](https://www.digikey.com/en/products/detail/microchip-technology/TC1264-3.3VDB/964315) | Surface mount | Varies | ~$1.30–$3.00 | Many SMD options exist with similar performance | Must ensure sufficient current headroom |
 
 ---
 
 ## Selected Component  
-**TLV75733PDBVR**
+**LM2575D2T-3.3R4G**
 
 ### Rationale
 
-I chose the TLV75733PDBVR because it comes in a smaller SOT-23 package and can supply up to 1 A, giving us more current headroom in a compact design. It also includes an enable pin, which gives us better control over power management in the circuit.
+I chose the LM2575D2T-3.3R4G because it comes in a smaller SOT-23 package and can supply up to 1 A, giving us more current headroom in a compact design. It also includes an ON/OFF pin, which gives us better control over power management in the circuit.
 
 ---
