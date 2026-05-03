@@ -7,4 +7,4 @@ Block Diagram for my wireless communication (MQTT) subsystem.
 
 ## Block Diagram 
 
-![Block Diagram](BlockDiagram314New.drawio.png)
+![Block Diagram](EGR314_Subsystem_BlockDiagram.png)
