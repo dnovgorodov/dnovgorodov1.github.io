@@ -964,8 +964,47 @@
 <h2 id="selected-component_1">Selected Component</h2>
 <p><strong>LM2575D2T-3.3WU-TR</strong></p>
 <h3 id="rationale_1">Rationale</h3>
-<p>I chose the LM2575D2T-3.3WU-TR because it comes in a smaller SOT-23 package and can supply up to 1 A, giving us more current headroom in a compact design. It also includes an ON/OFF pin, which gives us better control over power management in the circuit.</p>
+<p>I chose the LM2575D2T-3.3WU-TR because it comes in a smaller SOT-23 package and can supply up to 1 A, giving us more current headroom in a compact design. It also includes an ON/OFF pin, which gives us better control over power management in the circuit. It is also a switching regulator.</p>
 <hr>
+<h2 id="summary-table">Summary Table</h2>
+<table>
+<thead>
+<tr>
+<th>Subsystem</th>
+<th>Component</th>
+<th>Part Number / Model</th>
+<th>Type</th>
+<th>Key Specs</th>
+<th>Reason for Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power Input</td>
+<td>DC Barrel Jack</td>
+<td>PJ-068B-SMT-TR</td>
+<td>Surface-mount connector</td>
+<td>~1–2 A current, 5–12 V input</td>
+<td>Meets SMD requirement, compact, reliable mechanical connection</td>
+</tr>
+<tr>
+<td>Power Regulation</td>
+<td>3.3 V Switching Regulator</td>
+<td>LM2575D2T-3.3WU-TR</td>
+<td>Buck (switching) regulator</td>
+<td>3.3 V output, up to ~1 A</td>
+<td>Efficient, handles ESP32 current spikes, includes ON/OFF control</td>
+</tr>
+<tr>
+<td>Processing / Communication</td>
+<td>ESP32 Microcontroller</td>
+<td>ESP32-S3-WROOM-1</td>
+<td>Wi-Fi + Bluetooth MCU module</td>
+<td>3.3 V operation, Wi-Fi + BLE, ~400–500 mA peak</td>
+<td>Provides wireless communication and processing; widely supported and suitable for MQTT subsystem</td>
+</tr>
+</tbody>
+</table>
 
 
 
