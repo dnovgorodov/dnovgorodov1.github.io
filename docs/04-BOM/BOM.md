@@ -37,4 +37,4 @@ This is the bill of materials for my MQTT subsystem.
 
 ## Resouce
 
-The Bill of Material as a PDF download is available [*here*](PDF_For_BOM_EXAMPLE.pdf).
+The Bill of Material as a PDF download is available [*here*](MQTT_Subsystem_BOM.pdf).
