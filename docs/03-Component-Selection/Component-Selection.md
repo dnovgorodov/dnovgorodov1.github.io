@@ -62,6 +62,15 @@ The PJ‑002BH‑SMT‑TR is a surface‑mount barrel jack, which makes it easy 
 
 ### Rationale
 
-I chose the LM2575D2T-3.3WU-TR because it comes in a smaller SOT-23 package and can supply up to 1 A, giving us more current headroom in a compact design. It also includes an ON/OFF pin, which gives us better control over power management in the circuit.
+I chose the LM2575D2T-3.3WU-TR because it comes in a smaller SOT-23 package and can supply up to 1 A, giving us more current headroom in a compact design. It also includes an ON/OFF pin, which gives us better control over power management in the circuit. It is also a switching regulator.
 
 ---
+
+## Summary Table
+
+| Subsystem        | Component              | Part Number / Model | Type                          | Key Specs                                      | Reason for Selection |
+|------------------|------------------------|---------------------|-------------------------------|-----------------------------------------------|----------------------|
+| Power Input      | DC Barrel Jack         | PJ-068B-SMT-TR      | Surface-mount connector       | ~1–2 A current, 5–12 V input                  | Meets SMD requirement, compact, reliable mechanical connection |
+| Power Regulation | 3.3 V Switching Regulator | LM2575D2T-3.3WU-TR | Buck (switching) regulator    | 3.3 V output, up to ~1 A                      | Efficient, handles ESP32 current spikes, includes ON/OFF control |
+| Processing / Communication | ESP32 Microcontroller | ESP32-S3-WROOM-1     | Wi-Fi + Bluetooth MCU module  | 3.3 V operation, Wi-Fi + BLE, ~400–500 mA peak | Provides wireless communication and processing; widely supported and suitable for MQTT subsystem |
+
