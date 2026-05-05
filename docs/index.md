@@ -1,4 +1,4 @@
-["BOM"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/04-BOM/BOM/)---
+---
 title: Welcome
 ---
 <center>
