@@ -9,7 +9,7 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/EGR314NovgorodovDatasheet/Hardware%20V2.0/Hardware/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/EGR314NovgorodovDatasheet/Hardware%20V2.0/Hardware%20V2.0/">
       
       
         <link rel="prev" href="../../Appendix/04-Examples-to-Remove/charts/">
@@ -24,7 +24,7 @@
 
     
       
-        <title>Hardware - EGR 314 Novgorodov Datasheet</title>
+        <title>Hardware V2.0 - EGR 314 Novgorodov Datasheet</title>
       
     
     
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hardware
+              Hardware V2.0
             
           </span>
         </div>
@@ -907,7 +907,7 @@
           
   
   <span class="md-ellipsis">
-    Hardware
+    Hardware V2.0
   </span>
   
 
@@ -918,7 +918,7 @@
         
   
   <span class="md-ellipsis">
-    Hardware
+    Hardware V2.0
   </span>
   
 
@@ -1010,7 +1010,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/EGR314NovgorodovDatasheet/edit/main/docs/Hardware V2.0/Hardware.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/EGR314NovgorodovDatasheet/edit/main/docs/Hardware V2.0/Hardware V2.0.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
     </a>
@@ -1018,7 +1018,7 @@
   
 
 
-  <h1>Hardware</h1>
+  <h1>Hardware V2.0</h1>
 
 <h2 id="hardware-20">Hardware 2.0</h2>
 <p>If I were to do my PCB over again to try and improve it, a few things come to mind right away. First of all, perhaps the most obvious improvement I would make is having all my components be surface-mount. That was what I had intended originally, but unfortunately, some of the surface-mount components would not have been able to come in time, so I had to settle for through-hole components instead. Second, I would check my footprints to make sure that they are all designed properly. The main issue that I had with footprints is the footprint for my buttons. When I first made the footprint, I accidentally numbered the pins in the footprint differently from how the pins were numbered in the schematic. Because of that, my footprint ended up connecting all four of the button’s pins regardless of whether the button was pressed or not. Because of that, I had to cut off two of the legs of my button and use only its remaining two legs in order to make it actually work like a button. So, again, I would do a better job of checking and designing my footprints. Third, and also related to the topic of footprints: I would design the pads to be a little wider (specifically, the surface-mount pads). A prominent issue that I faced a lot was that my surface-mount pads kept coming off when I tried to solder the component to it. And aside from that, even when the pads did not come off, it was still often difficult to solder the component onto the pad because the size of the pad was just enough to get the component soldered onto it. Now that I have visualized and experienced just how small these surface-mount pads really are, I would take that into consideration if I were to redesign the PCB. Finally, (this issue is not really a major hardware issue but more of a small design issue), I would redesign the PCB so that all of the component reference designators would be closer to the component itself. When I was designing the PCB in KiCAD, I did not know the difference between the silkscreen layer and the fabrication layer, and I did not know that the fabrication layer will not get printed onto the final PCB. Because of that, I had both of them on and the fabrication layer text pushed the silkscreen layer text up, which made it appear farther from the components on my PCB than it should have. Aside from that, everything did more-or-less work.</p>
