@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://embedded-systems-design.github.io/EGR314NovgorodovDatasheet/07-Reflection/Reflection/</loc>
+         <lastmod>2026-05-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://embedded-systems-design.github.io/EGR314NovgorodovDatasheet/08-Microcontroller-Selection/Microcontroller-Selection/</loc>
          <lastmod>2026-05-05</lastmod>
          <changefreq>daily</changefreq>
